@@ -1,0 +1,16 @@
+<h2>Gry</h2>
+<ul class="games" >
+
+
+  <li *ngFor="let game of games " >
+    <a routerLink="/detail/{{game.id}}">
+    <span class="badge">{{game.id}}</span> {{game.name}}
+    </a>
+  </li>
+</ul>
+
+<button (click)="goBack()" id="btt" type="button">go back</button>
+
+
+
+

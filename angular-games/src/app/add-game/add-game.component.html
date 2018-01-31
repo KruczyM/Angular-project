@@ -1,0 +1,21 @@
+<div>
+  <label>Game name:
+    <input #gameName />
+  </label>
+  <p></p>
+  <label>Game studio:
+    <input #gameStudio />
+  </label>
+  <p></p>
+  <label>Game language:
+    <input #gameLanguage />
+  </label>
+  <p></p>
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(gameName.value,gameStudio.value,gameLanguage.value); gameName.value=''">
+    add
+  </button>
+
+  <button (click)="goBack()" id="btt" type="button">go back</button>
+</div>

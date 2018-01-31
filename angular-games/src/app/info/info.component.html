@@ -1,0 +1,53 @@
+
+    <div *ngFor="let user of users">
+<h1>Użytkownik: {{user.user}}</h1>
+<h2>Ocena: {{user.rating}}</h2>
+
+    </div>
+    
+
+
+<h2>Gry</h2>
+<ul class="games" >
+
+
+  <li *ngFor="let game of games " >
+    <a routerLink="/detail/{{game.id}}">
+    <span class="badge">{{game.id}}</span> {{game.name}}
+    </a>
+  </li>
+</ul>
+
+
+
+<h2>Gry Poszukiwane</h2>
+<ul class="games" >
+
+
+  <li *ngFor="let game of sgames " >
+    <a routerLink="/detail/{{game.id}}">
+    <span class="badge">{{game.id}}</span> {{game.name}}
+    </a>
+  </li>
+</ul>
+
+<div *ngFor="let com of comm">
+  <h3>Od użytkownik: {{com.from}}</h3>
+  <h4>Ocena: {{com.what}}</h4>
+</div>
+
+
+<div>
+  <label>Add comment:
+    <input #comment />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(comment.value); comment.value=''" id="btt" type="button">
+    add
+  </button>
+</div>
+
+
+
+<button (click)="goBack()" id="btt" type="button">go back</button>
+

@@ -1,0 +1,46 @@
+<div class="grid grid-pad">
+    
+    <a class="col-1-3" routerLink="/games/{{imie}}"> 
+        <div class="module user">
+        <h4>Twoje gry</h4>
+        </div>
+    </a>
+<a class="col-1-3" routerLink="/searching-games/{{imie}}">
+    <div class="module user">
+    <h4> oczekiwane gry</h4>
+    </div>
+</a>
+<a class="col-1-3" routerLink="/other-games/{{imie}}">
+    <div class="module user">
+    <h4>Wszystkie gry</h4>
+    </div>  
+</a>
+<a class="col-1-3" routerLink="/add-game/{{imie}}">
+    <div class="module user">
+    <h4>Dodaj grę</h4>
+    </div>
+</a>
+<a class="col-1-3" routerLink="/add-game/1/{{imie}}">
+    <div class="module user">
+    <h4>Dodaj poszukiwaną grę</h4>
+    </div>
+</a>
+
+<a class="col-1-3" routerLink="/user-detail/{{imie}}"> 
+    <div class="module user">
+    <h4>Profile graczy</h4>
+    </div>
+</a>
+</div>
+
+
+    
+
+
+
+
+
+<br><br><br><br><br><br><br><br>
+<button (click)="goBack()" id="btt" type="button">go back</button>
+
+

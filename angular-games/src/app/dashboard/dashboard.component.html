@@ -1,0 +1,17 @@
+<h3>Użytkownicy</h3>
+<div class="grid grid-pad" >
+    <a *ngFor="let user of users" class="col-1-4" routerLink="/user-page/{{user.user}}"> 
+     
+    <div class="module user">
+      <h4>{{user.user}}</h4>
+    </div>
+  </a>
+</div>
+
+<!-- 
+
+
+ <a *ngFor="games" class="col-1-4" routerLink="/detail/{{game.id}}" ></a>
+routerLink="/detail/{{user.id}}"
+
+ -->
